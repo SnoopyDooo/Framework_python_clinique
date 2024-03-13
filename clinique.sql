@@ -43,7 +43,7 @@ CREATE TABLE `patients` (
 --
 
 INSERT INTO `patients` (`id`, `name`, `email`, `tel`, `address`, `maladie`) VALUES
-(4, 'gdf', 'fdg@gmail.com', '0404', 'ouo', 'imum');
+(1, 'test', 'test@gmail.com', '0404', 'mahamasina', 'maux de tête, toux');
 
 --
 -- Index pour les tables déchargées
