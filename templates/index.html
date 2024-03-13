@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %} Clinique {% endblock %}
+
+{% block header %} Liste patients {% endblock %}
+
+{% block body %}
+    <a href="{{ url_for('input_data') }}" class="btn btn-primary" style="margin-bottom: 1.3rem;">Ajouter patient</a>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for messages in messages %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Success</strong> {{ messages }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}  
+    <table class="table">
+        <thead class="thead-right">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Email</th>
+                <th scope="col">Téléphone</th>
+                <th scope="col">Addresse</th>
+                <th scope="col">Maladie</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for patient in data %}
+                <tr>
+                    <th scope="row">{{ loop.index }}</th>
+                    <td>{{ patient.name }}</td>
+                    <td>{{ patient.email }}</td>
+                    <td>{{ patient.tel }}</td>
+                    <td>{{ patient.address }}</td>
+                    <td>{{ patient.maladie }}</td>
+                    <td>
+                        <a href="{{ url_for('edit_data', id=patient.id ) }}" class="btn btn-warning">Modifier</a>
+                        <a href="{{ url_for('delete', id=patient.id ) }}" class="btn btn-danger" onclick="return confirm('êtes-vous sûr ?')">supprimer</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
