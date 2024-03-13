@@ -6,16 +6,16 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.secret_key = "grjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd" \
-                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjo" \
-                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^p" \
-                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjo" \
-                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^p" \
-                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjo" \
-                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^p" \
-                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjo" \
-                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^p" \
-                 "rioziîùjisgjrùjsdigd,g,i,vbsvisbùbrigiigjgjgihhghghsrgighithghirghsmghmfhhhfhfhfffdsdffffsg"
+app.secret_key = "grjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvdgrjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd" \
+                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjogrjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd" \
+                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^grjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvdp" \
+                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjogrjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd" \
+                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^pgrjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd" \
+                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjogrjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd" \
+                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^grjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvdp" \
+                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjogrjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd" \
+                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgpgrjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd^p" \
+                 "rioziîùjisgjrùjsdigd,g,i,vbsvisbùbrigiigjgjgihhghghsrgighithghirghsmghmfhhhfhfhfffdsdffffsggrjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd"
 
 """
 information de connexion à la base de données
@@ -129,4 +129,9 @@ def delete(id):
 if __name__ == "__main__":
     app.run(debug=True)
 
-
+# You are using PyCharm 2018.3 with Python 3.7. It has been extended to provide a more detailed explanation.
+#
+# In Python, comments are used to add explanatory notes to your code that are ignored by the interpreter. They are useful for documenting your code and making it more readable for other developers.
+#
+# To create a comment in PyCharm, you can use the hash symbol (#) followed by your comment text. You can create single-line comments or block comments.
+#
