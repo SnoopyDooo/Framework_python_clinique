@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.secret_key = "djfljdfljfnkjdfhjfshjkfjfjfhhjdhdjhdfu"
+app.secret_key = "grjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpbnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjojgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^prioziîùjisgjrùjsdigd,g,i,vbsvisbùbrigiigjgjgihhghghsrgighithghirghsmghmsg"
 
 """
 information de connexion à la base de données
@@ -119,3 +119,5 @@ def delete(id):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
