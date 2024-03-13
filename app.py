@@ -6,7 +6,16 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.secret_key = "grjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpbnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjojgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^prioziîùjisgjrùjsdigd,g,i,vbsvisbùbrigiigjgjgihhghghsrgighithghirghsmghmsg"
+app.secret_key = "grjojvdfnvnirnntunburnbinbiotbnnidnpzjzjgjzopgjzeopgjojdjlndvnlsvnlmsnrpjgjygjygjgfrzfdsfdfvd" \
+                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjo" \
+                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^p" \
+                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjo" \
+                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^p" \
+                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjo" \
+                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^p" \
+                 "bnnbenbnobnmnznbnzbpjopjopnnrhigigeghrrgiigjejgojgjeojrjsgmsjpz^gpjgrnnbinnbdnlbblnljilsigjo" \
+                 "jgdriojdjiojjjosjsjgojosjjgidjggjriggijrgg^rjgig^rigjrjfjkdkgfjskjnbrddùjsjgrjjsjgojsgjpgsgrgp^p" \
+                 "rioziîùjisgjrùjsdigd,g,i,vbsvisbùbrigiigjgjgihhghghsrgighithghirghsmghmfhhhfhfhfffdsdffffsg"
 
 """
 information de connexion à la base de données
