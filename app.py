@@ -1,9 +1,16 @@
+"""
+les imports
+"""
 from flask import Flask, redirect, render_template, url_for, request, flash
 from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
 app.secret_key = "djfljdfljfnkjdfhjfshjkfjfjfhhjdhdjhdfu"
+
+"""
+information de connexion à la base de données
+"""
 
 userpass = "mysql+pymysql://root:@"
 basedir = "127.0.0.1"
@@ -29,10 +36,18 @@ class Patients(db.Model):
         self.address = address
         self.maladie = maladie
 
+"""
+Les routes
+"""
+
 @app.route('/')
 def index():
     data_patient = db.session.query(Patients)
     return render_template("index.html", data=data_patient)
+
+"""
+les actions pour input
+"""
 
 @app.route('/input', methods=['GET', 'POST'])
 def input_data():
@@ -53,6 +68,10 @@ def input_data():
         return redirect(url_for('index'))
 
     return render_template('input.html')
+
+"""
+les actions pour edit
+"""
 
 @app.route('/edit/<int:id>')
 def edit_data(id):
@@ -76,8 +95,9 @@ def proses_edit():
 
     return redirect(url_for('index'))
 
-
-from flask import redirect, url_for
+"""
+Les actions pour delete
+"""
 
 from flask import redirect, url_for, abort
 
